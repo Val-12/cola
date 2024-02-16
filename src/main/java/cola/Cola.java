@@ -26,4 +26,14 @@ public class Cola <T extends Base> {
    public boolean estaVacia(){
        return elementos.isEmpty();
    }
+   
+    @Override
+    public String toString() {
+        String cad="[";
+        for(T e: elementos) {
+            cad+=" "+e.toString();
+        }
+        return cad+"]";
+    }
+  
 }
